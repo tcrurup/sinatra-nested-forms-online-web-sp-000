@@ -12,7 +12,9 @@
   @ships.each do |ship|
     ship_count += 1
 %>
-  <p>Name <%=ship.name%></p>
-
+  <h3>Ship <%=ship_count%> Details</h3>
+  <p>Name: <%=ship.name%></p>
+  <p>Type: <%=ship.type%></p>
+  <p>Booty: <%=ship.booty%></p>
 <% end %>
 
