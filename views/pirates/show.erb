@@ -1,13 +1,18 @@
 <h1>Pirate Info</h1>
 <div class='pirate'>
-  Name: <%=@pirate.name%>
-  Weight: <%=@pirate.weight%>
-  Height: <%=@pirate.height%>
+  <h5>Name: <%=@pirate.name%><h5>
+  <p>Weight: <%=@pirate.weight%></p>
+  <p>Height: <%=@pirate.height%></p>
 </div>
 
 <h2>Ship Info</h2>
 
-<% @ships.each do |ship| %>
+<% 
+  ship_count = 0
+  @ships.each do |ship|
+    ship_count += 1
+%>
+  <p></p>
 
 <% end %>
 
